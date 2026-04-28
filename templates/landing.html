@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CattleAI - Next Gen</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #050510;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff00cc;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-login {
+            background: linear-gradient(45deg, #ff00cc, #333399);
+            padding: 10px 25px;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #vanta-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 2;
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 3;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            color: #fff;
+            /* Crisp White Text */
+
+            /* SUBTLE GLOW: Just one soft layer */
+            text-shadow: 0 0 15px rgba(255, 0, 204, 0.6);
+        }
+
+        .subtext {
+            color: #888;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        /* SUBTLE PULSE ANIMATION */
+        @keyframes glowing {
+            0% {
+                box-shadow: 0 0 5px rgba(255, 0, 204, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 15px rgba(255, 0, 204, 0.6);
+            }
+
+            /* Reduced intensity */
+            100% {
+                box-shadow: 0 0 5px rgba(255, 0, 204, 0.3);
+            }
+        }
+
+        .cta-btn {
+            background: linear-gradient(90deg, #ff00cc, #333399);
+            color: white;
+            padding: 15px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: 0.3s;
+            position: relative;
+            z-index: 1;
+            /* Slower, gentler animation (3s instead of 2s) */
+            animation: glowing 3s infinite;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.02);
+            /* Slight zoom, not huge */
+            background: linear-gradient(90deg, #ff33dd, #4444aa);
+            /* Clean hover glow, no double shadows */
+            box-shadow: 0 0 20px rgba(255, 0, 204, 0.8);
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            flex-wrap: wrap;
+            background: #050510;
+        }
+
+        .card {
+            background: #0f0f1a;
+            padding: 30px;
+            border-radius: 15px;
+            width: 250px;
+            border: 1px solid #222;
+            text-align: center;
+        }
+
+        .card i {
+            font-size: 2rem;
+            color: #ff00cc;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo"><i class="fas fa-cow"></i> CattleAI</div>
+        <a href="/login" class="btn-login">Login</a>
+    </div>
+
+    <div class="hero">
+
+        <div id="vanta-bg"></div>
+        <div class="overlay"></div>
+
+        <div class="hero-inner">
+            <div style="margin-bottom:20px;">
+                <span style="background:#222; padding:5px 15px; border-radius:20px; font-size:0.8rem; color:#00ff88;">
+                    ● AI-Powered ● Real-time Detection
+                </span>
+            </div>
+
+            <h1>AI-Powered Cattle Breed Recognition <br>&<br> Information System</h1>
+
+            <p class="subtext">
+                Smart AI system for Real-Time Cattle Breed Detection with<br>
+                Multi-language Voice Output.
+            </p>
+
+            <a href="/login" class="cta-btn">Start Detection &rarr;</a>
+        </div>
+
+    </div>
+
+    <div class="features">
+        <div class="card">
+            <i class="fas fa-bullseye"></i>
+            <h3>93% Accuracy</h3>
+            <p>Powered by YOLOv8</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-language"></i>
+            <h3>Multi-Language</h3>
+            <p>Voice Output Support</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Real-Time</h3>
+            <p>Live Webcam Analytics</p>
+        </div>
+    </div>
+
+    <!-- Vanta Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+    <script>
+        VANTA.NET({
+            el: "#vanta-bg",
+            color: 0x7b61ff,
+            backgroundColor: 0x050510,
+            points: 10,
+            maxDistance: 22,
+            spacing: 18
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,517 @@
+[
+    {
+        "breed": "jersey",
+        "score": 67.47,
+        "date": "2026-04-20 16:32:24"
+    },
+    {
+        "breed": "vechur",
+        "score": 72.4,
+        "date": "2026-04-20 16:28:11"
+    },
+    {
+        "breed": "vechur",
+        "score": 72.4,
+        "date": "2026-04-20 16:28:11"
+    },
+    {
+        "breed": "vechur",
+        "score": 72.4,
+        "date": "2026-04-20 16:28:07"
+    },
+    {
+        "breed": "krishna_valley",
+        "score": 81.59,
+        "date": "2026-04-20 16:25:23"
+    },
+    {
+        "breed": "hariana",
+        "score": 92.01,
+        "date": "2026-04-20 16:11:52"
+    },
+    {
+        "breed": "kenkatha",
+        "score": 46.65,
+        "date": "2026-04-20 16:09:36"
+    },
+    {
+        "breed": "alambadi",
+        "score": 71.4,
+        "date": "2026-04-20 16:07:42"
+    },
+    {
+        "breed": "kasargod",
+        "score": 93.31,
+        "date": "2026-04-20 09:48:06"
+    },
+    {
+        "breed": "krishna_valley",
+        "score": 47.03,
+        "date": "2026-04-20 09:44:49"
+    },
+    {
+        "breed": "malnad_gidda",
+        "score": 66.91,
+        "date": "2026-04-20 09:42:27"
+    },
+    {
+        "breed": "amritmahal",
+        "score": 81.2,
+        "date": "2026-04-20 09:36:37"
+    },
+    {
+        "breed": "mehsana",
+        "score": 54.64,
+        "date": "2026-04-20 09:35:32"
+    },
+    {
+        "breed": "jersey",
+        "score": 61.15,
+        "date": "2026-04-07 11:56:59"
+    },
+    {
+        "breed": "vechur",
+        "score": 71.15,
+        "date": "2026-04-07 11:52:20"
+    },
+    {
+        "breed": "vechur",
+        "score": 71.15,
+        "date": "2026-04-07 11:51:33"
+    },
+    {
+        "breed": "mehsana",
+        "score": 54.64,
+        "date": "2026-04-07 11:49:01"
+    },
+    {
+        "breed": "jersey",
+        "score": 61.15,
+        "date": "2026-04-07 08:35:54"
+    },
+    {
+        "breed": "vechur",
+        "score": 72.77,
+        "date": "2026-04-07 08:34:46"
+    },
+    {
+        "breed": "mehsana",
+        "score": 54.64,
+        "date": "2026-04-07 08:34:11"
+    },
+    {
+        "breed": "amritmahal",
+        "score": 81.2,
+        "date": "2026-04-07 08:33:14"
+    },
+    {
+        "breed": "pulikulam",
+        "score": 91.81,
+        "date": "2026-04-07 08:32:42"
+    },
+    {
+        "breed": "vechur",
+        "score": 97.66,
+        "date": "2026-03-17 11:39:54"
+    },
+    {
+        "breed": "vechur",
+        "score": 97.66,
+        "date": "2026-03-17 11:03:21"
+    },
+    {
+        "breed": "jersey",
+        "score": 90.91,
+        "date": "2026-03-16 14:52:55"
+    },
+    {
+        "breed": "malnad_gidda",
+        "score": 66.91,
+        "date": "2026-03-16 14:51:42"
+    },
+    {
+        "breed": "nagpuri",
+        "score": 61.08,
+        "date": "2026-03-09 18:06:22"
+    },
+    {
+        "breed": "alambadi",
+        "score": 95.5,
+        "date": "2026-03-09 17:59:30"
+    },
+    {
+        "breed": "ayrshire",
+        "score": 95.67,
+        "date": "2026-03-09 17:58:33"
+    },
+    {
+        "breed": "amritmahal",
+        "score": 91.43,
+        "date": "2026-03-09 17:57:33"
+    },
+    {
+        "breed": "banni",
+        "score": 72.71,
+        "date": "2026-03-09 17:56:15"
+    },
+    {
+        "breed": "nili_ravi",
+        "score": 51.27,
+        "date": "2026-03-09 17:53:59"
+    },
+    {
+        "breed": "banni",
+        "score": 81.75,
+        "date": "2026-03-09 17:52:59"
+    },
+    {
+        "breed": "brown_swiss",
+        "score": 80.75,
+        "date": "2026-03-09 17:51:50"
+    },
+    {
+        "breed": "bhadawari",
+        "score": 97.37,
+        "date": "2026-03-09 17:50:34"
+    },
+    {
+        "breed": "toda",
+        "score": 49.47,
+        "date": "2026-03-09 17:49:52"
+    },
+    {
+        "breed": "bargur",
+        "score": 88.94,
+        "date": "2026-03-09 17:48:46"
+    },
+    {
+        "breed": "dangi",
+        "score": 91.94,
+        "date": "2026-03-09 17:43:13"
+    },
+    {
+        "breed": "dangi",
+        "score": 91.94,
+        "date": "2026-03-09 17:43:12"
+    },
+    {
+        "breed": "deoni",
+        "score": 92.05,
+        "date": "2026-03-09 17:42:06"
+    },
+    {
+        "breed": "guernsey",
+        "score": 86.14,
+        "date": "2026-03-09 17:40:36"
+    },
+    {
+        "breed": "gir",
+        "score": 94.52,
+        "date": "2026-03-09 17:39:03"
+    },
+    {
+        "breed": "gir",
+        "score": 90.78,
+        "date": "2026-03-09 17:38:22"
+    },
+    {
+        "breed": "hallikar",
+        "score": 96.64,
+        "date": "2026-03-09 17:35:56"
+    },
+    {
+        "breed": "jaffrabadi",
+        "score": 92.55,
+        "date": "2026-03-09 17:34:45"
+    },
+    {
+        "breed": "holstein_friesian",
+        "score": 91.07,
+        "date": "2026-03-09 17:33:51"
+    },
+    {
+        "breed": "krishna_valley",
+        "score": 64.19,
+        "date": "2026-03-09 17:30:41"
+    },
+    {
+        "breed": "kangayam",
+        "score": 90.53,
+        "date": "2026-03-09 17:29:25"
+    },
+    {
+        "breed": "jersey",
+        "score": 90.91,
+        "date": "2026-03-09 17:27:43"
+    },
+    {
+        "breed": "kankrej",
+        "score": 92.53,
+        "date": "2026-03-09 17:26:39"
+    },
+    {
+        "breed": "krishna_valley",
+        "score": 95.47,
+        "date": "2026-03-09 17:22:39"
+    },
+    {
+        "breed": "hariana",
+        "score": 75.44,
+        "date": "2026-03-09 17:20:49"
+    },
+    {
+        "breed": "kenkatha",
+        "score": 85.97,
+        "date": "2026-03-09 17:19:13"
+    },
+    {
+        "breed": "kasargod",
+        "score": 98.64,
+        "date": "2026-03-09 17:15:49"
+    },
+    {
+        "breed": "malnad_gidda",
+        "score": 66.91,
+        "date": "2026-03-09 17:14:27"
+    },
+    {
+        "breed": "kasargod",
+        "score": 93.28,
+        "date": "2026-03-09 17:11:43"
+    },
+    {
+        "breed": "krishna_valley",
+        "score": 93.53,
+        "date": "2026-03-09 17:10:59"
+    },
+    {
+        "breed": "khillari",
+        "score": 86.69,
+        "date": "2026-03-09 17:09:36"
+    },
+    {
+        "breed": "malnad_gidda",
+        "score": 98.23,
+        "date": "2026-03-09 17:08:48"
+    },
+    {
+        "breed": "mehsana",
+        "score": 77.91,
+        "date": "2026-03-09 17:07:43"
+    },
+    {
+        "breed": "nagori",
+        "score": 49.6,
+        "date": "2026-03-09 17:05:45"
+    },
+    {
+        "breed": "kankrej",
+        "score": 61.49,
+        "date": "2026-03-09 17:05:12"
+    },
+    {
+        "breed": "krishna_valley",
+        "score": 41.12,
+        "date": "2026-03-09 17:03:36"
+    },
+    {
+        "breed": "hariana",
+        "score": 97.72,
+        "date": "2026-03-09 17:02:31"
+    },
+    {
+        "breed": "krishna_valley",
+        "score": 97.12,
+        "date": "2026-03-09 16:58:24"
+    },
+    {
+        "breed": "kenkatha",
+        "score": 69.77,
+        "date": "2026-03-09 16:57:17"
+    },
+    {
+        "breed": "nagpuri",
+        "score": 99.22,
+        "date": "2026-03-09 16:56:52"
+    },
+    {
+        "breed": "nagori",
+        "score": 49.6,
+        "date": "2026-03-09 16:56:06"
+    },
+    {
+        "breed": "kankrej",
+        "score": 61.49,
+        "date": "2026-03-09 16:55:33"
+    },
+    {
+        "breed": "murrah",
+        "score": 88.96,
+        "date": "2026-03-09 16:54:48"
+    },
+    {
+        "breed": "nagpuri",
+        "score": 99.22,
+        "date": "2026-03-09 16:52:58"
+    },
+    {
+        "breed": "banni",
+        "score": 77.57,
+        "date": "2026-03-09 16:51:16"
+    },
+    {
+        "breed": "surti",
+        "score": 54.13,
+        "date": "2026-03-09 16:49:39"
+    },
+    {
+        "breed": "nili_ravi",
+        "score": 70.06,
+        "date": "2026-03-09 16:48:45"
+    },
+    {
+        "breed": "nili_ravi",
+        "score": 49.61,
+        "date": "2026-03-09 16:48:14"
+    },
+    {
+        "breed": "nimari",
+        "score": 96.86,
+        "date": "2026-03-09 16:45:26"
+    },
+    {
+        "breed": "gir",
+        "score": 51.1,
+        "date": "2026-03-09 16:44:46"
+    },
+    {
+        "breed": "nimari",
+        "score": 93.31,
+        "date": "2026-03-09 16:44:16"
+    },
+    {
+        "breed": "pulikulam",
+        "score": 73.26,
+        "date": "2026-03-09 16:43:18"
+    },
+    {
+        "breed": "rathi",
+        "score": 80.94,
+        "date": "2026-03-09 16:42:20"
+    },
+    {
+        "breed": "rathi",
+        "score": 95.41,
+        "date": "2026-03-09 16:41:44"
+    },
+    {
+        "breed": "red_dane",
+        "score": 97.51,
+        "date": "2026-03-09 16:40:41"
+    },
+    {
+        "breed": "red_dane",
+        "score": 92.87,
+        "date": "2026-03-09 16:40:08"
+    },
+    {
+        "breed": "red_sindhi",
+        "score": 78.88,
+        "date": "2026-03-09 16:38:58"
+    },
+    {
+        "breed": "red_sindhi",
+        "score": 89.62,
+        "date": "2026-03-09 16:38:18"
+    },
+    {
+        "breed": "gir",
+        "score": 91.79,
+        "date": "2026-03-09 16:35:42"
+    },
+    {
+        "breed": "sahiwal",
+        "score": 95.08,
+        "date": "2026-03-09 16:34:58"
+    },
+    {
+        "breed": "banni",
+        "score": 79.63,
+        "date": "2026-03-09 16:33:58"
+    },
+    {
+        "breed": "tharparkar",
+        "score": 80.85,
+        "date": "2026-03-09 16:32:55"
+    },
+    {
+        "breed": "hariana",
+        "score": 77.62,
+        "date": "2026-03-09 16:32:06"
+    },
+    {
+        "breed": "toda",
+        "score": 92.99,
+        "date": "2026-03-09 16:31:25"
+    },
+    {
+        "breed": "umblachery",
+        "score": 98.19,
+        "date": "2026-03-09 16:30:26"
+    },
+    {
+        "breed": "rathi",
+        "score": 92.61,
+        "date": "2026-03-09 15:43:26"
+    },
+    {
+        "breed": "nagpuri",
+        "score": 82.51,
+        "date": "2026-03-09 15:42:34"
+    },
+    {
+        "breed": "nagpuri",
+        "score": 57.35,
+        "date": "2026-03-09 15:41:07"
+    },
+    {
+        "breed": "nagpuri",
+        "score": 57.35,
+        "date": "2026-03-09 15:40:25"
+    },
+    {
+        "breed": "mehsana",
+        "score": 51.13,
+        "date": "2026-03-09 15:39:25"
+    },
+    {
+        "breed": "hariana",
+        "score": 86.74,
+        "date": "2026-03-09 15:21:07"
+    },
+    {
+        "breed": "guernsey",
+        "score": 91.48,
+        "date": "2026-02-26 10:54:41"
+    },
+    {
+        "breed": "surti",
+        "score": 65.01,
+        "date": "2026-02-26 10:53:39"
+    },
+    {
+        "breed": "kasargod",
+        "score": 30.35,
+        "date": "2026-02-26 10:50:47"
+    },
+    {
+        "breed": "vechur",
+        "score": 83.69,
+        "date": "2026-02-22 13:54:39"
+    },
+    {
+        "breed": "vechur",
+        "score": 83.69,
+        "date": "2026-02-22 13:46:36"
+    }
+]

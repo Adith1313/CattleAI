@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Menu - CattleAI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { margin:0; background:#0a0a12; font-family:'Segoe UI',sans-serif; color:white; min-height:100vh; display:flex; flex-direction:column; }
+        
+        /* NAVBAR */
+        .navbar { background:#11111b; padding:20px 50px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #222; }
+        
+        /* LOGO WITH COW ICON */
+        .logo { 
+            font-size: 1.5rem; 
+            font-weight: bold; 
+            color: white; 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+        }
+        
+        /* Make the Cow Icon Pink */
+        .logo i { color: #ff00cc; }
+
+        .logout { color:#aaa; text-decoration:none; font-weight:bold; transition:0.3s; font-size: 0.9rem; }
+        .logout:hover { color:#ff00cc; text-shadow:0 0 10px #ff00cc; }
+
+        /* MAIN CONTAINER */
+        .container { flex:1; display:flex; justify-content:center; align-items:center; gap:40px; padding:50px; }
+
+        /* NEON PULSE ANIMATION */
+        @keyframes neonCardPulse {
+            0% {
+                border-color: rgba(255, 0, 204, 0.3);
+                box-shadow: 0 0 10px rgba(255, 0, 204, 0.1);
+            }
+            100% {
+                border-color: rgba(255, 0, 204, 0.8);
+                box-shadow: 0 0 25px rgba(255, 0, 204, 0.4);
+            }
+        }
+
+        /* CARD STYLES */
+        .card {
+            background: #0f0f1a;
+            padding: 50px 30px;
+            border-radius: 20px;
+            width: 320px;
+            text-align: center;
+            transition: transform 0.3s;
+            
+            /* NEON BORDER GLOW */
+            border: 2px solid rgba(255, 0, 204, 0.3);
+            animation: neonCardPulse 2s infinite alternate ease-in-out;
+        }
+
+        /* Hover effect */
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #ff00cc;
+            box-shadow: 0 0 40px rgba(255, 0, 204, 0.6);
+            animation: none; /* Stop pulsing on hover so it stays bright */
+        }
+
+        .icon-circle {
+            width: 80px; height: 80px;
+            background: #1a1a29;
+            border-radius: 50%;
+            display: flex; justify-content: center; align-items: center;
+            margin: 0 auto 20px auto;
+            font-size: 2rem;
+        }
+
+        /* Specific Colors for Icons */
+        .icon-camera { color: #ff00cc; }
+        .icon-video { color: #00e676; }
+        .icon-stats { color: #00bfff; }
+
+        h2 { margin: 10px 0; font-size: 1.5rem; }
+        p { color: #888; font-size: 0.9rem; margin-bottom: 30px; line-height: 1.5; }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Button Colors */
+        .btn-pink { background: linear-gradient(90deg, #ff00cc, #9900ff); box-shadow: 0 5px 15px rgba(255, 0, 204, 0.3); }
+        .btn-pink:hover { box-shadow: 0 0 25px rgba(255, 0, 204, 0.6); transform: scale(1.05); }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo"><i class="fas fa-cow"></i> CattleAI</div>
+        <a href="/" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+
+    <div class="container">
+        
+        <div class="card">
+            <div class="icon-circle">
+                <i class="fas fa-camera icon-camera"></i>
+            </div>
+            <h2>Image Detection</h2>
+            <p>Upload an image to identify cattle breeds with high accuracy.</p>
+            <a href="/predict" class="btn btn-pink">Upload Image</a>
+        </div>
+
+        <div class="card">
+            <div class="icon-circle">
+                <i class="fas fa-video icon-video"></i>
+            </div>
+            <h2>Live Detection</h2>
+            <p>Use your webcam for real-time cattle breed identification.</p>
+            <a href="/live" class="btn btn-pink" style="background: linear-gradient(90deg, #ff00cc, #6600ff);">Start Webcam</a>
+        </div>
+
+        <div class="card">
+            <div class="icon-circle">
+                <i class="fas fa-chart-bar icon-stats"></i>
+            </div>
+            <h2>Analytics</h2>
+            <p>View model performance, accuracy graphs and history.</p>
+            <a href="/analytics" class="btn btn-pink" style="background: linear-gradient(90deg, #9900ff, #333399);">View Stats</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Cattle Analytics</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root { --primary: #2c3e50; --accent: #27ae60; --bg: #f4f6f7; --text: #34495e; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: var(--bg); display: flex; height: 100vh; }
+        
+        /* SIDEBAR */
+        .sidebar { width: 260px; background-color: var(--primary); color: white; padding-top: 25px; display: flex; flex-direction: column; }
+        .sidebar h2 { text-align: center; font-size: 1.1rem; margin-bottom: 35px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 20px; }
+        .menu-item { padding: 18px 30px; color: #bdc3c7; text-decoration: none; display: flex; align-items: center; gap: 15px; transition: 0.3s; border-left: 5px solid transparent; }
+        .menu-item.active { background-color: rgba(255,255,255,0.05); color: white; border-left: 5px solid var(--accent); }
+
+        /* MAIN CONTENT */
+        .main-content { flex: 1; padding: 40px; overflow-y: auto; }
+        
+        /* HEADER */
+        .header-box { background: white; padding: 25px 40px; border-radius: 12px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .header-box h1 { margin: 0; color: var(--primary); font-size: 1.8rem; }
+
+        /* UPLOAD & CARD */
+        .card { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .btn-upload { background: var(--accent); color: white; padding: 12px 25px; border-radius: 6px; font-weight: 600; cursor: pointer; display: inline-block; }
+        input[type="file"] { display: none; }
+
+        /* DASHBOARD GRID */
+        .dashboard-grid { display: grid; grid-template-columns: 350px 1fr; gap: 30px; }
+        
+        /* DATA TABLE */
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .data-table td { padding: 12px 10px; border-bottom: 1px solid #f1f1f1; }
+        .label-cell { color: #95a5a6; font-size: 0.85rem; font-weight: 700; width: 150px; text-transform: uppercase; }
+        .value-cell { color: var(--primary); font-weight: 500; }
+
+        /* BIO GRID (This is the NEW part!) */
+        .bio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; background: #f8fafc; padding: 15px; border-radius: 8px; }
+        .bio-item { display: flex; flex-direction: column; }
+        .bio-label { font-size: 0.75rem; color: #7f8c8d; font-weight: bold; margin-bottom: 5px; }
+        .bio-value { font-size: 1rem; color: var(--primary); font-weight: 600; }
+
+        .badge { padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; background: #dcfce7; color: #166534; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2><i class="fas fa-flask"></i> Research Lab</h2>
+        <a href="/" class="menu-item active"><i class="fas fa-dna"></i> Analysis Dashboard</a>
+        <a href="/live" class="menu-item"><i class="fas fa-video"></i> Live Scanner</a>
+    </div>
+
+    <div class="main-content">
+        <div class="header-box">
+            <div><h1>Cattle Analytics v3.0</h1><p style="margin:5px 0 0; color:#7f8c8d;">Comprehensive Biological Profile</p></div>
+            <span class="badge" style="background:#e0f2fe; color:#075985;">Admin Access</span>
+        </div>
+
+        {% if not uploaded_image %}
+        <div class="card" style="text-align: center; padding: 60px;">
+            <i class="fas fa-microscope" style="font-size: 4rem; color: #ecf0f1; margin-bottom: 20px;"></i>
+            <h3>Upload Specimen</h3>
+            <form action="/" method="post" enctype="multipart/form-data">
+                <label class="btn-upload"><input type="file" name="file" onchange="this.form.submit()"> Select File</label>
+            </form>
+        </div>
+        {% endif %}
+
+        {% if uploaded_image %}
+        <div class="dashboard-grid">
+            <div class="card" style="text-align: center;">
+                <img src="{{ url_for('static', filename=uploaded_image) }}" style="width:100%; border-radius:8px; border:4px solid white; box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+                <h2 style="margin: 15px 0 5px 0; color: var(--primary);">{{ breed }}</h2>
+                <span style="color: var(--accent); font-weight: bold;">{{ score }} Confidence</span>
+                <br><br>
+                <a href="/" style="color: #95a5a6; text-decoration: none;">Scan Another</a>
+            </div>
+
+            <div class="card">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <span style="font-style:italic; color:#7f8c8d; font-family:'Georgia';">{{ details.sci_name }}</span>
+                    <span class="badge">{{ details.status }}</span>
+                </div>
+                
+                <table class="data-table">
+                    <tr><td class="label-cell"><i class="fas fa-map-marker-alt"></i> Origin</td><td class="value-cell">{{ details.origin }}</td></tr>
+                    <tr><td class="label-cell"><i class="fas fa-fingerprint"></i> Type</td><td class="value-cell">{{ details.type }}</td></tr>
+                    <tr><td class="label-cell"><i class="fas fa-ruler-combined"></i> Specs</td><td class="value-cell">{{ details.specs }}</td></tr>
+                    <tr><td class="label-cell"><i class="fas fa-tint"></i> Milk Yield</td><td class="value-cell">{{ details.milk_stats }}</td></tr>
+                </table>
+
+                <h4 style="margin: 20px 0 10px 0; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 5px;">
+                    <i class="fas fa-notes-medical"></i> Biological Profile
+                </h4>
+                <div class="bio-grid">
+                    <div class="bio-item">
+                        <span class="bio-label">LIFESPAN</span>
+                        <span class="bio-value">{{ details.bio.lifespan }}</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">CLIMATE TOLERANCE</span>
+                        <span class="bio-value">{{ details.bio.climate }}</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">GESTATION PERIOD</span>
+                        <span class="bio-value">{{ details.bio.gestation }}</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">TEMPERAMENT</span>
+                        <span class="bio-value">{{ details.bio.behavior }}</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px; background: #eafaf1; padding: 15px; border-left: 4px solid var(--accent); border-radius: 4px;">
+                    <p style="margin:0; color: #2d3436; line-height: 1.6;">{{ details.desc }}</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

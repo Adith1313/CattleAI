@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ANIMATED BACKGROUND */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Deep Space Gradient */
+            background: linear-gradient(-45deg, #020205, #14142b, #2a002a, #0f0f3e);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            overflow: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* FLOATING LOGIN BOX */
+        .login-box {
+            background: rgba(20, 20, 30, 0.8); /* Semi-transparent */
+            padding: 40px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px); /* Glass effect */
+            
+            /* Slide Down Animation */
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .login-box h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+            /* Neon Text Effect */
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 0, 204, 0.5);
+        }
+
+        /* INPUT FIELDS */
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+            transition: 0.3s;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px 15px 15px 45px; /* Space for icon */
+            background: #0a0a12;
+            border: 1px solid #333;
+            border-radius: 50px;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            box-sizing: border-box; /* Fixes padding issues */
+            transition: 0.3s;
+        }
+
+        /* GLOW ON FOCUS */
+        input:focus {
+            border-color: #ff00cc;
+            box-shadow: 0 0 15px rgba(255, 0, 204, 0.3);
+        }
+
+        input:focus + i {
+            color: #ff00cc; /* Icon turns pink too */
+        }
+
+        /* SUBTLE PULSE BUTTON */
+        @keyframes glowing {
+            0% { box-shadow: 0 0 5px rgba(255, 0, 204, 0.3); }
+            50% { box-shadow: 0 0 15px rgba(255, 0, 204, 0.6); }
+            100% { box-shadow: 0 0 5px rgba(255, 0, 204, 0.3); }
+        }
+
+        .btn-login {
+            width: 100%;
+            background: linear-gradient(90deg, #ff00cc, #6600ff);
+            padding: 15px;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+            
+            /* The Pulse Animation */
+            animation: glowing 3s infinite;
+        }
+
+        .btn-login:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(255, 0, 204, 0.8);
+        }
+        
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .home-link:hover { color: #ff00cc; }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <h2>Login</h2>
+        
+        <form method="post">
+            <div class="input-group">
+                <input type="text" name="username" placeholder="Username" required autocomplete="off">
+                <i class="fas fa-user"></i>
+            </div>
+
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="fas fa-key"></i>
+            </div>
+
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+
+        <a href="/" class="home-link"><i class="fas fa-arrow-left"></i> Back </a>
+    </div>
+
+</body>
+</html>
