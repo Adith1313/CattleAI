@@ -43,3 +43,29 @@ The system supports detection of **39 cattle breeds** and is designed for ease o
 * Expanded breed dataset
 * Improved accuracy with larger training data
 
+## Screenshots
+
+### Home Page
+![Home](screenshots/home.png)
+
+### 📊 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Image Upload
+![Upload](screenshots/upload.png)
+
+### Successful Prediction
+![Prediction Success](screenshots/prediction_success.png)
+
+### Unknown Detection
+![Prediction Failure](screenshots/prediction_failure.png)
+
+### Live Detection
+![Live](screenshots/live_detection.png)
+
+### Analytics Overview
+![Analytics](screenshots/analytics_overview.png)
+
+### Detection History
+![History](screenshots/analytics_history.png)
+
